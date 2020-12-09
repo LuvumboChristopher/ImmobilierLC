@@ -11,6 +11,13 @@ body {
     color: white!important;
 }
 
+a {
+    color: rgb(95, 152, 206)!important;
+    text-decoration: none !important;
+}
+a:hover {
+    color: rgb(76, 192, 72) !important;
+}
 nav.navbar {
     background-color:rgb(95, 152, 206)!important;
     color: white !important;
@@ -19,15 +26,39 @@ nav.navbar {
 }
 main {
     justify-content: center;
-    padding:5rem;
+    padding:4.5rem;
     margin: auto;
     align-items: center;
 }
 form {
-    width: 70%;
+    width: 85%;
     margin: auto;
     padding: 30px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(245, 245, 245);
     border: 1 px solid black;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+}
+button {
+    background-color:rgb(95, 152, 206)!important;;
+    color: white!important;
+}
+button:hover {
+    color: beige;
+}
+div.block {
+    margin-bottom:5rem;
+}
+div.col {
+    padding: 1rem;
+    margin: auto;
+}
+div.col.img {
+    padding: 5rem;
+    text-align: center;
+}
+div.card {
+    padding: 1rem;
+    background-color:rgb(245, 245, 245);
+    border: 1 px solid black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
 }
