@@ -41,32 +41,33 @@
     </header>
     <main>
         <!-- Default form contact -->
-        <form class="text-center border border-light p-5" action="index.php" method="post" class="needs-validation" novalidate>
-
+        <form class="text-center border border-light p-5" action="formulaire.php" method="POST">
             <h2 class="h4 mb-4">Deposez votre annonce</h2>
             
             <!-- Titre -->
             <label for="titre"></label>
-            <input type="text" class="form-control mb-4" placeholder="Titre de l'annonce" name="titre">
+            <input type="text" class="form-control mb-4" placeholder="Titre de l'annonce" name="titre" required>
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>  
             
             <!-- type -->
-            <label>Type</label>
-            <input type="radio" name="type" value="Location">
+            <label>Type</label><br>
+            <label for="location">Location</label>
+                <input type="radio" name="type" value="location">
 
-            <input type="radio" name="type" value="Vente"> </input>
+            <label for="vente">Vente</label>
+                <input type="radio" name="type" value="vente"> </input>
 
 
             <!-- adresse -->
             <label for="adresse"></label>
-            <input type="text" class="form-control mb-4" placeholder="Adresse (Ex. 4 Avenue Marechal Saxe)"name="adresse">
+            <input type="text" class="form-control mb-4" placeholder="Adresse (Ex. 4 Avenue Marechal Saxe)"name="adresse" required>
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
             <!-- ville -->
             <label for="codePostal"></label>
-            <input type="text" class="form-control mb-4" placeholder="Ville (Ex. Madrid)" name="ville">
+            <input type="text" class="form-control mb-4" placeholder="Ville (Ex. Madrid)" name="ville" required>
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
@@ -92,12 +93,12 @@
             <!-- description -->
             <div class="form-group">
             <label>Description</label>
-                <textarea class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="Description"></textarea>
+                <textarea class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="Description" name="description"></textarea>
             </div>
             <!-- photo -->
             <div class="form-group">
             <label>Photo</label>
-                <input class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="(Ex. Image0001.jpg)"></input>
+                <input class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="(Ex. Image0001.jpg)" name="photo"></input>
             </div>
             <br>
             <!-- Send button -->
