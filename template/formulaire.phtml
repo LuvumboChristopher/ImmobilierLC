@@ -22,7 +22,7 @@
     <header style="height: 70px">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Inmobilier LC</a>
+                <a class="navbar-brand" href="index.php">Immobilier LC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,55 +47,59 @@
             
             <!-- Titre -->
             <label for="titre"></label>
-            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Titre" name="titre">
+            <input type="text" class="form-control mb-4" placeholder="Titre de l'annonce" name="titre">
             <div class="valid-feedback">¡Ok valide!</div>
-            <div class="invalid-feedback">Completez le champ.</div>   
+            <div class="invalid-feedback">Completez le champ.</div>  
+            
+            <!-- type -->
+            <label>Type</label>
+            <input type="radio" name="type" value="Location">
+
+            <input type="radio" name="type" value="Vente"> </input>
+
 
             <!-- adresse -->
             <label for="adresse"></label>
-            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Adresse"name="adresse">
+            <input type="text" class="form-control mb-4" placeholder="Adresse (Ex. 4 Avenue Marechal Saxe)"name="adresse">
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
-            <!-- code postal -->
+            <!-- ville -->
             <label for="codePostal"></label>
-            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Ville" name="ville">
+            <input type="text" class="form-control mb-4" placeholder="Ville (Ex. Madrid)" name="ville">
+            <div class="valid-feedback">¡Ok valide!</div>
+            <div class="invalid-feedback">Completez le champ.</div>
+
+            <!-- code postale -->
+            <label for="codePostal"></label>
+            <input type="text" class="form-control mb-4" placeholder="Code postale (Ex. 69100)" name="cp">
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
             <!-- surface -->
             <label for="surface"></label>
-            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Code postal" name="surface">
+            <input type="text"class="form-control mb-4" placeholder="Surface (Ex. 94m²)" name="surface">
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
             <!-- prix -->
             <label for="prix"></label>
-            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Surface" name="surface">
+            <input type="text" class="form-control mb-4" placeholder="Prix (Ex. 3000£)" name="prix">
             <div class="valid-feedback">¡Ok valide!</div>
             <div class="invalid-feedback">Completez le champ.</div>
 
-            
-            <!-- type -->
-            <label>Type</label>
-            <select class="browser-default custom-select mb-4">
-                <option value="" disabled selected>Choisissez votre option</option>
-                <option value="3">Location</option>
-                <option value="4">Vente</option>
-            </select>
 
             <!-- description -->
             <div class="form-group">
             <label>Description</label>
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                <textarea class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="Description"></textarea>
             </div>
-
-            <!-- Photo -->
-            <div class="custom-control custom-checkbox mb-4">
-                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+            <!-- photo -->
+            <div class="form-group">
+            <label>Photo</label>
+                <input class="form-control rounded-0" id="exFormControlTextarea2" rows="3" placeholder="(Ex. Image0001.jpg)"></input>
             </div>
-
+            <br>
             <!-- Send button -->
             <button class="btn btn-info btn-block" type="submit">Soumettre</button>
 

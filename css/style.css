@@ -10,12 +10,18 @@ body {
  div.container-fluid a.navbar-brand {
     color: white!important;
 }
-
-a {
+h1 {
+    padding-bottom: 3rem;
+    text-align:center;
+}
+a:hover {
+    color: white!important;
+}
+div.card a {
     color: rgb(95, 152, 206)!important;
     text-decoration: none !important;
 }
-a:hover {
+div.card a:hover {
     color: rgb(76, 192, 72) !important;
 }
 nav.navbar {
@@ -53,7 +59,7 @@ div.col {
     margin: auto;
 }
 div.col.img {
-    padding: 5rem;
+    padding: 2.3rem !important;
     text-align: center;
 }
 div.card {
